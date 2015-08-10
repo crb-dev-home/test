@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<!-- 
+$(function() {
+    $("#alises").attr("size", parseInt($("#autoheight option").length));
+}); -->
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Apache Wicket Quickstart</title>
+</head>
+<body>
+	<wicket:extend>
+
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="col-md-2 bs-docs-sidebar">
+					<span class="badge badge-inverse">Index to search against</span> <select
+						id="alises" class="form-control bs-docs-sidenav"
+						multiple="multiple" size=30
+						style='height: 100%; overflow-y: auto; overflow-x: hidden;'>
+						<option>dns</option>
+						<option>dns</option>
+						<option>another</option>
+						<option>another4</option>
+						<option>another</option>
+						<option>another</option>
+						<option>another4</option>
+						<option>another</option>
+					</select>
+				</div>
+				<div class="col-md-6">
+					<p>
+					<div class="input-prepend">
+						<button type="submit" class="btn">Search</button>
+						<input id="queryInput" class="input-block-level" type="text"
+							placeholder="Query">
+					</div>
+					<label class="checkbox"> <input type="checkbox" value="">
+						<span class="badge badge-inverse">Notify me by email</span>
+					</label>
+
+				</div>
+				<div class="col-md-4" style="margin-top: 10px;">
+
+					<span class="badge badge-inverse" style="margin-right: 5px;">From</span><input
+						wicket:id="from"> <br> <span
+						class="badge badge-inverse" style="margin-right: 15px;">To</span>
+					<input wicket:id="to">
+				</div>
+
+
+				<div class="col-md-6">
+					<!-- 					<div class="hero-unit"> -->
+					<table class="table">
+						<tbody>
+							<tr class="success"> 
+								<td><span class="label label-success">Success</span></td>
+								<td>success... link</td>
+							</tr>
+							<tr class="danger">
+								<td><span class="label label-important">Failed</span></td>
+								<td>error... link</td>
+							</tr>
+
+						</tbody>
+					</table>
+					<!-- 					</div> -->
+				</div>
+				<div class="col-md-3">
+					<table class="table  table-striped">
+						<tbody>
+							<tr>
+								<td><span class="label label-success">Success</span></td>
+								<td>success... link</td>
+							</tr>
+							<tr>
+								<td><span class="label label-important">Failed</span></td>
+								<td>error... link</td>
+							</tr>
+							<tr>
+								<td><span class="label label-success">Success</span></td>
+								<td>success... link</td>
+							</tr>
+							<tr>
+								<td><span class="label label-important">Failed</span></td>
+								<td>error... link</td>
+							</tr>
+							<tr>
+								<td><span class="label label-success">Success</span></td>
+								<td>success... link</td>
+							</tr>
+							<tr>
+								<td><span class="label label-important">Failed</span></td>
+								<td>error... link</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+				<!-- 				<div class="col-md-3"> -->
+				<!-- 					<div class="hero-unit">im en a well3</div> -->
+				<!-- 				</div> -->
+			</div>
+		</div>
+
+	</wicket:extend>
+</body>
+</html>
